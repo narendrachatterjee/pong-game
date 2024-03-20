@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: yellow;
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#ball {
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+
+#rod1,
+#rod2 {
+    width: 200px;
+    height: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+#rod1 {
+    background-color: red;
+    top: 20px; /* Adjust the distance from the top */
+}
+
+#rod2 {
+    background-color: saddlebrown;
+    bottom: 20px; /* Adjust the distance from the bottom */
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 600px) {
+    #ball,
+    #rod1,
+    #rod2 {
+        width: 15px; /* Adjust ball and rod width for smaller screens */
+        height: 15px; /* Adjust ball and rod height for smaller screens */
+    }
+
+    #rod1,
+    #rod2 {
+        width: 150px; /* Adjust rod width for smaller screens */
+    }
+}
