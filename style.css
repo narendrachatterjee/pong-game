@@ -1,5 +1,5 @@
 body {
-    background-image: url('background.png');
+    background-image: url('./assets/background.png');
     background-color: rgb(124, 153, 185);
     background-size: cover;
     background-repeat: no-repeat;
@@ -62,6 +62,7 @@ form h1 {
 .btn:hover {
     background-color: rgb(160, 75, 11);
 }
+
 
 @media screen and (max-width: 600px) {
     .header img {

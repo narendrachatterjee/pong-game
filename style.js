@@ -87,12 +87,15 @@ window.addEventListener('keypress', function (event) {
 
 
     if (event.code === "KeyD" && ((rodRect.x + rodRect.width) < window.innerWidth)) {
-        rod1.style.left = (rodRect.x) + rodSpeed + 'px';
-        rod2.style.left = rod1.style.left;
+        rod2.style.left = (parseInt(rod2.style.left) + rodSpeed) + 'px';
+        rod1.style.left = rod2.style.left;
+        
     } else if (event.code === "KeyA" && (rodRect.x > 0)) {
-        rod1.style.left = (rodRect.x) - rodSpeed + 'px';
+        rod1.style.left = (parseInt(rodRect.x) + rodSpeed) + 'px';
         rod2.style.left = rod1.style.left;
     }
+
+    
 
 
     if (event.code === "Enter") {
